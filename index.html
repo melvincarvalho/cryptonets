@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+
+    <script type="application/json" id="data">
+      {
+        "@id": "",
+        "redirect": false,
+        "info": false,
+        "gateway": "https://cloudflare-ipfs.com/ipfs/",
+        "examples": [
+          {
+            "name": "Verdi-Nabucco",
+            "hash": "QmXv7TpGgdhyjp7L1QkSFNjdq9zwoG1YHi4nykYt16Ve1r"
+          },
+          {
+            "name": "nostr-logo",
+            "hash": "QmTN4Eas9atUULVbEAbUU8cowhtvK7g3t7jfKztY7wc8eP"
+          }
+        ]
+      }
+    </script>
+
+    <script type="module">
+      import { render, html, Component } from 'https://cdn.skypack.dev/spux'
+      import 'https://cdn.skypack.dev/dior'
+
+      class App extends Component {
+        constructor (props) {
+          super(props)
+        }
+
+        render () {
+          return html`
+            cryptonets
+          `
+        }
+      }
+
+      render(
+        html`
+          <${App} />
+        `,
+        document.body
+      )
+
+      console.log(di.data)
+    </script>
+
+    <title>Multi Hash</title>
+  </head>
+  <body></body>
+</html>

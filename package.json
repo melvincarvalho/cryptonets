@@ -1,0 +1,30 @@
+{
+  "name": "cryptonets",
+  "version": "0.0.1",
+  "description": "crypto nets",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./bin/cryptonets.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvincarvalho/cryptonets.git"
+  },
+  "keywords": [
+    "cryptonets"
+  ],
+  "bin": {
+    "cryptonets": "./bin/cryptonets.js"
+  },
+  "author": "Melvin Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melvincarvalho/cryptonets/issues"
+  },
+  "homepage": "https://github.com/melvincarvalho/cryptonets#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
